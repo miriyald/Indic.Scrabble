@@ -1,3 +1,71 @@
+# Indic Scrabble — Modernized (Telugu vertical slice)
+
+A mobile-first, fully static, installable PWA rebuild of
+[miriyald/Indic.Scrabble](https://github.com/miriyald/Indic.Scrabble).
+No server: dictionary validation and the bot run entirely in the browser,
+and the site deploys to **GitHub Pages** via the included Actions workflow.
+
+**Play:** enable Pages (Settings → Pages → Source: GitHub Actions), push to
+`master`/`main`, and the workflow deploys to
+`https://miriyald.github.io/Indic.Scrabble/`.
+
+## What's in this slice
+
+- **Telugu only**, playing against **వసారా (Vasara / "Gallery")**, the
+  smallest of the original nine Telugu bots — 3,814 unique words compiled by
+  `scripts/build-dictionary.mjs` from the legacy `te.gallery.txt` /
+  `te.gallery.words` into a 216 KB JSON (41 KB gzipped), lazy-loaded at start.
+  The other bots (ఈనాడు, బీబీసీ, …) plug in through the same pipeline later;
+  their raw legacy files total ~197 MB and must never ship as-is.
+- **Faithful core rules**, ported from the legacy code and data:
+  - 11×11 board, centre star, premiums from `Scrabble.Server/Resources/Boards.json`
+  - cabinet tile counts & weights (W/C) from `Boards.json` (`te.11x11`)
+  - shared Game Table of 16 tiles (≤8 vowel-side, ≤8 consonant-side) — no private rack
+  - syllable (aksharam) cells that can be **altered** by adding tiles,
+    using the legacy `Indic.ts` combination rules and synonym (vowel-sign)
+    fallback — verified by tests that reproduce **99.0%** of dictionary
+    words glyph-for-glyph from their tiles form
+  - one row/column per turn, connectivity, no single-syllable orphans,
+    every formed word must be in the vocabulary
+- **Bot**: greedy best-score search over its vocabulary using only table
+  tiles, with a 1.2 s time budget so phones never jank.
+- **PWA**: manifest + service worker cache the app and dictionary for
+  offline play after the first load.
+
+## Known gaps in this slice (deliberate)
+
+- 37 of 3,814 dictionary words (1%) use legacy edge forms the ported engine
+  can't construct (lone-virama syllables; ౖ ordering in loanwords like
+  చైనా). They are excluded from bot play and validation.
+- No online multiplayer (impossible on GitHub Pages alone), no pass-and-play
+  yet, no drag-and-drop (tap-to-place is the mobile-primary interaction).
+- Bot has one difficulty (its vocabulary). The legacy C# `AlphaEngine` /
+  `RegexEngine` remain the reference for a future, stronger bot.
+
+## Develop
+
+```bash
+npm install
+npm run dev     # local dev server
+npm test        # engine + game-flow tests (vitest)
+npm run build   # regenerates the dictionary, type-checks, builds dist/
+```
+
+## Layout
+
+- `src/engine/te-config.ts` — Telugu charset, cabinet, board (from legacy JSON resources)
+- `src/engine/indic.ts` — syllable engine, ported from legacy `Scrabble/src/Indic.ts`
+- `src/engine/game.ts` — state, validation, scoring, bot
+- `src/App.tsx` — mobile-first UI (tap a tile, then a cell)
+- `data-source/` — legacy vocabulary/config files, kept verbatim
+- `scripts/build-dictionary.mjs` — vocabulary pipeline
+- `.github/workflows/deploy.yml` — GitHub Pages deployment
+
+
+---
+
+# Legacy project (pre-modernization README)
+
 # Indic Scrabble 
 
 *Scrabble* is a popular word game originally designed for *English*. Later it was adopted in many other languages.This an attempt to bring the Scrabble like game to Indian Languages targeted to work on mobiles and tablets.

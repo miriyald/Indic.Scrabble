@@ -1,0 +1,146 @@
+﻿{
+  "andhra.bharati": {
+    "Name": "ఆంధ్రభారతి",
+    "FullName": "ఆంధ్రభారతి",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.ab.txt",
+    "Credits": "http://andhrabharati.com/dictionary",
+    "Endpoint": null
+  },
+  "tebha": {
+    "Name": "పోతన",
+    "FullName": "పోతన",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.tebha.txt",
+    "Credits": "http://telugubhagavatam.org",
+    "Endpoint": null
+  },
+  "eenadu": {
+    "Name": "ఈనాడు",
+    "FullName": "ఈనాడు",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.eenadu.txt",
+    "Credits": "http://www.eenadu.net",
+    "Endpoint": null
+  },
+  "bbc.te": {
+    "Name": "బీబీసీ",
+    "FullName": "బీబీసీ తెలుగు",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.bbc.txt",
+    "Credits": "https://www.bbc.com/telugu",
+    "Endpoint": null
+  },
+  "bible.te": {
+    "Name": "బైబిలు",
+    "FullName": "బైబిలు",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.bible.txt",
+    "Credits": "https://github.com/christos-c/bible-corpus/tree/master/bibles",
+    "Endpoint": null
+  },
+  "andhrajyothy": {
+    "Name": "ఆంధ్రజ్యోతి",
+    "FullName": "ఆంధ్రజ్యోతి",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.andhrajyothy.txt",
+    "Credits": "http://www.andhrajyothy.com",
+    "Endpoint": null
+  },
+  "kinige": {
+    "Name": "కినిగె",
+    "FullName": "కినిగె",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.kinige.txt",
+    "Credits": "http://kinige.com",
+    "Endpoint": null
+  },
+  "veeven": {
+    "Name": "వీవెనుడు",
+    "FullName": "వీవెనుడు",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.veeven.txt",
+    "Credits": "https://veeven.wordpress.com",
+    "Endpoint": null
+  },
+  "gallery": {
+    "Name": "వసారా",
+    "FullName": "వసారా",
+    "Language": "te",
+    "Algorithm": "Default",
+    "Dictionary": "te.gallery.txt",
+    "Credits": "Various Sources",
+    "Endpoint": null
+  },
+  "vijay": {
+    "Name": "ವಿಜಯ",
+    "FullName": "ವಿಜಯ ಕರ್ನಾಟಕ",
+    "Language": "kn",
+    "Algorithm": "Default",
+    "Dictionary": "kn.vijaykarnataka.txt",
+    "Credits": "https://vijaykarnataka.indiatimes.com",
+    "Endpoint": null
+  },
+  "udayavani": {
+    "Name": "ಉದಯವಾಣಿ",
+    "FullName": "ಉದಯವಾಣಿ",
+    "Language": "kn",
+    "Algorithm": "Default",
+    "Dictionary": "kn.udayavani.txt",
+    "Credits": "https://www.udayavani.com",
+    "Endpoint": null
+  },
+  "bible.kn": {
+    "Name": "ಬೈಬಲ್",
+    "FullName": "ಬೈಬಲ್",
+    "Language": "kn",
+    "Algorithm": "Default",
+    "Dictionary": "kn.bible.txt",
+    "Credits": "https://github.com/christos-c/bible-corpus/tree/master/bibles",
+    "Endpoint": null
+  },
+  "bbc.hi": {
+    "Name": "बीबीसी",
+    "FullName": "बीबीसी हिंदी",
+    "Language": "hi",
+    "Algorithm": "Default",
+    "Dictionary": "hi.bbc.txt",
+    "Credits": "https://www.bbc.com/hindi",
+    "Endpoint": null
+  },
+  "bible.hi": {
+    "Name": "बाइबिल",
+    "FullName": "बाइबिल",
+    "Language": "hi",
+    "Algorithm": "Default",
+    "Dictionary": "hi.bible.txt",
+    "Credits": "https://github.com/christos-c/bible-corpus/tree/master/bibles",
+    "Endpoint": null
+  },
+  "bbc.si": {
+    "Name": "BBC",
+    "FullName": "BBC Sinhala",
+    "Language": "si",
+    "Algorithm": "Default",
+    "Dictionary": "si.bbc.txt",
+    "Credits": "https://www.bbc.com/sinhala",
+    "Endpoint": null
+  },
+  "tharunaya.si":{
+    "Name": "Tharunaya",
+    "FullName": "Tharunaya",
+    "Language": "si",
+    "Algorithm": "Default",
+    "Dictionary": "si.tharunaya.txt",
+    "Credits": "http://www.tharunaya.us/",
+    "Endpoint": null
+  }
+}
