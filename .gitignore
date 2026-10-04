@@ -2,3 +2,7 @@
 .vs
 OCR
 packages
+node_modules
+dist
+.DS_Store
+tsconfig.tsbuildinfo

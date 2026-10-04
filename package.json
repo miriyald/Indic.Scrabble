@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "description": "Indic Scrabble \u2014 modernized, mobile-first, static PWA. Telugu vertical slice.",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0",
+    "vitest": "^3.1.0"
+  },
+  "name": "indic-scrabble",
+  "private": true,
+  "scripts": {
+    "build": "npm run data && tsc -b && vite build",
+    "data": "node scripts/build-dictionary.mjs",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "predev": "npm run data"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
